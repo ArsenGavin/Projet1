@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <ul>
+
+  <%
+  for(var i=0; i<EpicerieList.length; i++) {
+  %>
+
+    <li>
+    <%= EpicerieList[i].Nom %>
+      <%= EpicerieList[i].Rue %>
+        <%= EpicerieList[i].Département %>
+          <%= EpicerieList[i].Téléphone %>
+            <%= EpicerieList[i].Lundi %>
+              <%= EpicerieList[i].Mardi %>
+                <%= EpicerieList[i].Mercredi %>
+                  <%= EpicerieList[i].Jeudi %>
+                    <%= EpicerieList[i].Vendredi %>
+                      <%= EpicerieList[i].Samedi %>
+                        <%= EpicerieList[i].Dimanche %>
+                        <a href="/supprimer?i=<%=i%>"> <span class="glyphicon glyphicon-trash"></span> </a>
+                        </li>
+                          <br>
+                            <% } %>
+  </ul>
+
+  <form action="/ajouter">
+  <input type="text" name="Nom" value="" placeholder="Nom" </pl> <br>
+  <input type="text" name="Rue" value="" placeholder="Rue" > <br>
+  <input type="text" name="Département" value="" placeholder="Département"> <br>
+  <input type="text" name="Téléphone" value="" placeholder="Téléphone"> <br>
+  <input type="text" name="Lundi" value="" placeholder="Lundi"> <br>
+  <input type="text" name="Mardi" value="" placeholder="Mardi"> <br>
+  <input type="text" name="Mercredi" value="" placeholder="Mercredi"> <br>
+  <input type="text" name="Jeudi" value="" placeholder="Jeudi"> <br>
+  <input type="text" name="Vendredi" value="" placeholder="Vendredi"> <br>
+  <input type="text" name="Samedi" value="" placeholder="Samedi"> <br>
+  <input type="text" name="Dimanche" value="" placeholder="Dimanche"> <br>
+  <input type="submit" value="valider">
+</form>
+
+
+</body>
+</html>
