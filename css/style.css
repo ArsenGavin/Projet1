@@ -1,0 +1,20 @@
+/*.photo {
+  background-color:#fafbfc;
+  border:1px solid #b0b0b0;
+  margin:0 0 10px 10px;
+  padding:5px;
+}
+.photoadroite {
+  border: 5px solid #b0b0b0;
+  margin: 5px 6px 15px 6px;
+}
+.photoagauche {
+  border : 5px solid #b0b0b0;
+  float : left;
+  margin : 5px 15px 6px 15 px;
+} */
+
+body
+{
+  background-image: url "C:\Users\Arsen\Desktop\Nouveau dossier\Pragtik";
+}

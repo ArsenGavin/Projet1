@@ -23,35 +23,40 @@
   %>
 
     <li>
-    <%= EpicerieList[i].Nom %>
-      <%= EpicerieList[i].Rue %>
-        <%= EpicerieList[i].Département %>
-          <%= EpicerieList[i].Téléphone %>
-            <%= EpicerieList[i].Lundi %>
-              <%= EpicerieList[i].Mardi %>
-                <%= EpicerieList[i].Mercredi %>
-                  <%= EpicerieList[i].Jeudi %>
-                    <%= EpicerieList[i].Vendredi %>
-                      <%= EpicerieList[i].Samedi %>
-                        <%= EpicerieList[i].Dimanche %>
+    Nom :
+    <input type="text" name="Nom" value="<%= EpicerieList[i].Nom %>">
+      Rue :
+      <input type="text" name="Rue" value= "<%= EpicerieList[i].Rue %>">
+        Département :
+        <input type="text" name="Département" value="<%= EpicerieList[i].Département %>">
+          Téléphone :
+          <input type="text" name="Téléphone" value= "<%= EpicerieList[i].Téléphone %>"> <br>
+            Horaire semaine :
+            <input type="text" name="Lundi" value="<%= EpicerieList[i].Lundi %>">
+              <input type="text" name="Mardi" value="<%= EpicerieList[i].Mardi %>">
+                <input type="text" name="Mercredi" value="<%= EpicerieList[i].Mercredi %>">
+                  <input type="text" name="Jeudi" value="<%= EpicerieList[i].Jeudi %>">
+                    <input type="text" name="Vendredi" value="<%= EpicerieList[i].Vendredi %>">
+                      <input type="text" name="Samedi" value="<%= EpicerieList[i].Samedi %>">
+                        <input type="text" name="Dimanche" value="<%= EpicerieList[i].Dimanche %>">
                         <a href="/supprimer?i=<%=i%>"> <span class="glyphicon glyphicon-trash"></span> </a>
                         </li>
-                          <br>
+                          <br><br><br>
                             <% } %>
   </ul>
 
   <form action="/ajouter">
   <input type="text" name="Nom" value="" placeholder="Nom" </pl> <br>
   <input type="text" name="Rue" value="" placeholder="Rue" > <br>
-  <input type="text" name="Département" value="" placeholder="Département"> <br>
+  <input type="text" name="Département" value="" placeholder="Département/Arrondissement"> <br>
   <input type="text" name="Téléphone" value="" placeholder="Téléphone"> <br>
-  <input type="text" name="Lundi" value="" placeholder="Lundi"> <br>
-  <input type="text" name="Mardi" value="" placeholder="Mardi"> <br>
-  <input type="text" name="Mercredi" value="" placeholder="Mercredi"> <br>
-  <input type="text" name="Jeudi" value="" placeholder="Jeudi"> <br>
-  <input type="text" name="Vendredi" value="" placeholder="Vendredi"> <br>
-  <input type="text" name="Samedi" value="" placeholder="Samedi"> <br>
-  <input type="text" name="Dimanche" value="" placeholder="Dimanche"> <br>
+  <input type="text" name="Lundi" value="" placeholder="Horaire Lundi"> <br>
+  <input type="text" name="Mardi" value="" placeholder="Horaire Mardi"> <br>
+  <input type="text" name="Mercredi" value="" placeholder="Horaire Mercredi"> <br>
+  <input type="text" name="Jeudi" value="" placeholder="Horaire Jeudi"> <br>
+  <input type="text" name="Vendredi" value="" placeholder="Horaire Vendredi"> <br>
+  <input type="text" name="Samedi" value="" placeholder="Horaire Samedi"> <br>
+  <input type="text" name="Dimanche" value="" placeholder="Horaire Dimanche"> <br>
   <input type="submit" value="valider">
 </form>
 
